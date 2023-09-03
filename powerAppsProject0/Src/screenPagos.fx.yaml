@@ -196,13 +196,187 @@ screenPagos As screen:
                 Y: =428
                 ZIndex: =17
 
+    contPopUpRegistrarPago As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =varShowPopUp3
+        Width: =1366
+        ZIndex: =2
+
+        subContPopUpRegistrarPago As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            Visible: |+
+                =true
+                
+            Width: =424
+            X: =480
+            ZIndex: =1
+
+            labelRegPagoTitl As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =16
+                Text: ="Registrar Pago"
+                Width: =160
+                X: =32
+                Y: =24
+                ZIndex: =1
+
+            labelOrdnCompTitll As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="Orden de Compra"
+                Width: =140
+                X: =32
+                Y: =72
+                ZIndex: =2
+
+            TextInput1 As text:
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                Size: =12
+                X: =32
+                Y: =125
+                ZIndex: =3
+
+            labelOrdnCompTitll_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="Factura"
+                Width: =140
+                X: =32
+                Y: =198
+                ZIndex: =4
+
+            TextInput1_1 As text:
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                Size: =12
+                X: =32
+                Y: =249
+                ZIndex: =5
+
+            labelOrdnCompTitll_2 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =38
+                Size: =12
+                Text: ="Proveedor"
+                Width: =90
+                X: =32
+                Y: =312
+                ZIndex: =6
+
+            TextInput1_2 As text:
+                Default: ="|"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Size: =12
+                X: =32
+                Y: =356
+                ZIndex: =7
+
+            labelOrdnCompTitll_3 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =38
+                Size: =12
+                Text: ="Cliente"
+                Width: =90
+                X: =32
+                Y: =419
+                ZIndex: =9
+
+            Label6 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="Hito"
+                Width: =50
+                X: =32
+                Y: =523
+                ZIndex: =10
+
+            Label6_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="Monto"
+                Width: =60
+                X: =224
+                Y: =523
+                ZIndex: =11
+
+            TextInput1_4 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="|"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Size: =12
+                Width: =150
+                X: =32
+                Y: =563
+                ZIndex: =12
+
+            TextInput1_5 As text:
+                Default: ="|"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Size: =12
+                Width: =150
+                X: =202
+                Y: =563
+                ZIndex: =13
+
+            TextInput1_3 As text:
+                Default: ="|"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Size: =12
+                X: =32
+                Y: =457
+                ZIndex: =14
+
+            Label6_2 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="Pago"
+                Width: =50
+                X: =32
+                Y: =631
+                ZIndex: =15
+
+            Button2 As button:
+                BorderColor: =RGBA(71, 132, 141, 1)
+                BorderStyle: =BorderStyle.Dashed
+                Color: =RGBA(71, 132, 141, 1)
+                Fill: =RGBA(231, 236, 237, 1)
+                Font: =Font.'Segoe UI'
+                Height: =45
+                Size: =12
+                Text: ="Adjuntar archivo"
+                Width: =320
+                X: =32
+                Y: =686
+                ZIndex: =16
+
+        "'Rectangle13-opacado_1' As rectangle":
+            Fill: =RGBA(0, 0, 0, .25)
+            Height: =764
+            OnSelect: =
+            Width: =1366
+            ZIndex: =2
+
     containerPrincipalDatosPagos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =768
         Width: =1366
-        ZIndex: =2
+        ZIndex: =3
 
-        containerDatosFacturas_1 As groupContainer.manualLayoutContainer:
+        containerDatosPagos As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(212, 212, 212, 1)
             BorderThickness: =1
             Height: =568
@@ -613,7 +787,8 @@ screenPagos As screen:
                 Fill: =RGBA(71, 132, 141, 1)
                 Font: =Font.'Segoe UI'
                 Height: =44
-                OnSelect: =true
+                OnSelect: |-
+                    =UpdateContext({varShowPopUp3:false})
                 Size: =12
                 Text: ="+ Registrar Pago"
                 Width: =200
@@ -640,170 +815,4 @@ screenPagos As screen:
                 X: =20
                 Y: =244
                 ZIndex: =20
-
-    contPopUpRegistrarPago As groupContainer.manualLayoutContainer:
-        Height: =768
-        Visible: =varShowPopUp3
-        Width: =1366
-        ZIndex: =3
-
-        contPopUpRegstPago As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =768
-            Visible: |
-                =varShowPopUp3
-            Width: =424
-            X: =480
-            ZIndex: =1
-
-            labelRegPagoTitl As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =16
-                Text: ="Registrar Pago"
-                Width: =160
-                X: =32
-                Y: =24
-                ZIndex: =1
-
-            labelOrdnCompTitll As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="Orden de Compra"
-                Width: =140
-                X: =32
-                Y: =72
-                ZIndex: =2
-
-            TextInput1 As text:
-                Default: ="Seleccione una opción"
-                Font: =Font.'Segoe UI'
-                Size: =12
-                X: =32
-                Y: =125
-                ZIndex: =3
-
-            labelOrdnCompTitll_1 As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="Factura"
-                Width: =140
-                X: =32
-                Y: =198
-                ZIndex: =4
-
-            TextInput1_1 As text:
-                Default: ="Seleccione una opción"
-                Font: =Font.'Segoe UI'
-                Size: =12
-                X: =32
-                Y: =249
-                ZIndex: =5
-
-            labelOrdnCompTitll_2 As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =38
-                Size: =12
-                Text: ="Proveedor"
-                Width: =90
-                X: =32
-                Y: =312
-                ZIndex: =6
-
-            TextInput1_2 As text:
-                Default: ="|"
-                Fill: =RGBA(249, 249, 249, 1)
-                Font: =Font.'Segoe UI'
-                Size: =12
-                X: =32
-                Y: =356
-                ZIndex: =7
-
-            labelOrdnCompTitll_3 As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =38
-                Size: =12
-                Text: ="Cliente"
-                Width: =90
-                X: =32
-                Y: =419
-                ZIndex: =9
-
-            Label6 As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="Hito"
-                Width: =50
-                X: =32
-                Y: =523
-                ZIndex: =10
-
-            Label6_1 As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="Monto"
-                Width: =60
-                X: =224
-                Y: =523
-                ZIndex: =11
-
-            TextInput1_4 As text:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                Default: ="|"
-                Fill: =RGBA(249, 249, 249, 1)
-                Font: =Font.'Segoe UI'
-                Size: =12
-                Width: =150
-                X: =32
-                Y: =563
-                ZIndex: =12
-
-            TextInput1_5 As text:
-                Default: ="|"
-                Fill: =RGBA(249, 249, 249, 1)
-                Font: =Font.'Segoe UI'
-                Size: =12
-                Width: =150
-                X: =202
-                Y: =563
-                ZIndex: =13
-
-            TextInput1_3 As text:
-                Default: ="|"
-                Fill: =RGBA(249, 249, 249, 1)
-                Font: =Font.'Segoe UI'
-                Size: =12
-                X: =32
-                Y: =457
-                ZIndex: =14
-
-            Label6_2 As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="Pago"
-                Width: =50
-                X: =32
-                Y: =631
-                ZIndex: =15
-
-            Button2 As button:
-                BorderColor: =RGBA(71, 132, 141, 1)
-                BorderStyle: =BorderStyle.Dashed
-                Color: =RGBA(71, 132, 141, 1)
-                Fill: =RGBA(231, 236, 237, 1)
-                Font: =Font.'Segoe UI'
-                Height: =45
-                Size: =12
-                Text: ="Adjuntar archivo"
-                Width: =320
-                X: =32
-                Y: =686
-                ZIndex: =16
 
