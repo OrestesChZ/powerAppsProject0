@@ -1,0 +1,2331 @@
+screenCompras As screen:
+
+    contAgregarHitoCompra As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =false
+        Width: =1366
+        ZIndex: =1
+
+        subContAgregarHitoCompra As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            Width: =424
+            X: =485
+            ZIndex: =1
+
+            Label12 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =16
+                Text: ="Hitos Compra"
+                X: =32
+                Y: =24
+                ZIndex: =1
+
+            Label13 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                Size: =10
+                Text: |-
+                    ="Total a Pagar:"
+                Width: =95
+                X: =32
+                Y: =64
+                ZIndex: =2
+
+            Label11_2 As label:
+                Font: =Font.'Segoe UI'
+                Height: =20
+                Size: =10
+                Text: ="$ 00.00"
+                Width: =55
+                X: =121
+                Y: =64
+                ZIndex: =3
+
+            Label13_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                Size: =10
+                Text: |-
+                    ="Monto de Hitos: "
+                Width: =110
+                X: =224
+                Y: =64
+                ZIndex: =4
+
+            Label11_3 As label:
+                Font: =Font.'Segoe UI'
+                Height: =20
+                Size: =10
+                Text: ="$ 00.00/0%"
+                Width: =80
+                X: =330
+                Y: =64
+                ZIndex: =5
+
+            Label14 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Descripción"
+                Width: =99
+                X: =32
+                Y: =102
+                ZIndex: =6
+
+            Label14_1 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Unidad de Medida"
+                Width: =145
+                X: =32
+                Y: =204
+                ZIndex: =7
+
+            Label15 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Cantidad"
+                Width: =77
+                X: =32
+                Y: =312
+                ZIndex: =8
+
+            Label15_1 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Valor"
+                Width: =60
+                X: =224
+                Y: =312
+                ZIndex: =9
+
+            Label14_2 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Condición de Pago"
+                Width: =165
+                X: =32
+                Y: =500
+                ZIndex: =10
+
+            Label15_2 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Total"
+                Width: =60
+                X: =32
+                Y: =402
+                ZIndex: =11
+
+            Label15_3 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="%"
+                Width: =20
+                X: =224
+                Y: =402
+                ZIndex: =12
+
+            Label14_3 As label:
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Fecha de Vencimiento"
+                Width: =180
+                X: =32
+                Y: =588
+                ZIndex: =13
+
+            Button8 As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Font: =Font.'Segoe UI'
+                Text: ="Agregar Hito"
+                Width: =360
+                X: =32
+                Y: =700
+                ZIndex: =14
+
+            TextInput4 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Width: =360
+                X: =32
+                Y: =138
+                ZIndex: =15
+
+            TextInput4_1 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Width: =168
+                X: =32
+                Y: =342
+                ZIndex: =16
+
+            TextInput4_2 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Width: =168
+                X: =224
+                Y: =342
+                ZIndex: =17
+
+            TextInput4_3 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Width: =168
+                X: =32
+                Y: =434
+                ZIndex: =18
+
+            TextInput4_4 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Width: =168
+                X: =224
+                Y: =434
+                ZIndex: =19
+
+            TextInput4_5 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Size: =12
+                Width: =360
+                X: =32
+                Y: =237
+                ZIndex: =20
+
+            Button9 As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: =""
+                Width: =44
+                X: =348
+                Y: =237
+                ZIndex: =21
+
+            Icon5 As icon.ChevronDown:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =24
+                Icon: =Icon.ChevronDown
+                Width: =24
+                X: =358
+                Y: =250
+                ZIndex: =22
+
+            TextInput4_6 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Size: =12
+                Width: =360
+                X: =32
+                Y: =528
+                ZIndex: =23
+
+            Button9_1 As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: =""
+                Width: =44
+                X: =348
+                Y: =528
+                ZIndex: =24
+
+            Icon5_1 As icon.ChevronDown:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =24
+                Icon: =Icon.ChevronDown
+                Width: =24
+                X: =358
+                Y: =540
+                ZIndex: =25
+
+            TextInput4_7 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Size: =12
+                Width: =360
+                X: =32
+                Y: =616
+                ZIndex: =26
+
+            Button9_2 As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: =""
+                Width: =44
+                X: =348
+                Y: =616
+                ZIndex: =27
+
+            Icon6 As icon.CalendarBlank:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =27
+                Icon: =Icon.CalendarBlank
+                Width: =27
+                X: =357
+                Y: =626
+                ZIndex: =28
+
+    contPopUpHitos As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =610
+        Visible: =false
+        Width: =888
+        X: =240
+        Y: =92
+        ZIndex: =2
+
+        botonGuardarOrden_3 As button:
+            Fill: =RGBA(71, 132, 141, 1)
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Text: ="Guardar"
+            Width: =120
+            X: =736
+            Y: =16
+            ZIndex: =1
+
+        labelTitlOrdCompra_1 As label:
+            Font: =Font.'Segoe UI'
+            Height: =32
+            Size: =24
+            Text: ="Orden de Compra (OC-0025)"
+            Width: =427
+            X: =32
+            Y: =22
+            ZIndex: =2
+
+        botonGuardarOrden_2 As button:
+            Color: =RGBA(99, 99, 99, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Text: ="Cancelar"
+            Width: =120
+            X: =592
+            Y: =16
+            ZIndex: =3
+
+        rectEncabezadoPopUp_1 As rectangle:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =76
+            Width: =888
+            ZIndex: =4
+
+        rectHitosCompra_1 As rectangle:
+            Fill: =RGBA(212, 212, 212, 1)
+            Height: =1
+            Width: =888
+            Y: =419
+            ZIndex: =5
+
+        labelHitosCompra_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =16
+            Text: ="Hitos de Compra"
+            Width: =194
+            X: =32
+            Y: =444
+            ZIndex: =6
+
+        iconDownHitos_1 As icon.ChevronDown:
+            Height: =24
+            Icon: =Icon.ChevronDown
+            Width: =24
+            X: =209
+            Y: =455
+            ZIndex: =7
+
+        labelIdOrdenPopUp_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =12
+            Text: ="ID Orden"
+            Width: =79
+            X: =32
+            Y: =95
+            ZIndex: =8
+
+        labelProvPopUp_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Size: =12
+            Text: ="Proveedor"
+            Width: =90
+            X: =176
+            Y: =95
+            ZIndex: =9
+
+        labelClienteTtl_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Size: =12
+            Text: ="Cliente"
+            Width: =70
+            X: =528
+            Y: =95
+            ZIndex: =10
+
+        labelNumOrden_1 As label:
+            Fill: =RGBA(249, 249, 249, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =12
+            Text: ="OC -0025"
+            Width: =80
+            X: =32
+            Y: =135
+            ZIndex: =11
+
+        inputProveedor_1 As text:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            Color: =RGBA(147, 147, 147, 1)
+            Default: ="Seleccione una opción"
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Width: =328
+            X: =176
+            Y: =135
+            ZIndex: =12
+
+        botonListaProveedor_1 As button:
+            Fill: =RGBA(71, 132, 141, 1)
+            Height: =44
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: =""
+            Width: =44
+            X: =460
+            Y: =135
+            ZIndex: =13
+
+        iconDownProvPopUp_1 As icon.ChevronDown:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =24
+            Icon: =Icon.ChevronDown
+            Width: =24
+            X: =470
+            Y: =145
+            ZIndex: =14
+
+        inputCliente_1 As text:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            Color: =RGBA(147, 147, 147, 1)
+            Default: ="Seleccione una opción"
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Width: =328
+            X: =528
+            Y: =135
+            ZIndex: =15
+
+        botonListaCliente_1 As button:
+            Fill: =RGBA(71, 132, 141, 1)
+            Height: =44
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: =""
+            Width: =44
+            X: =812
+            Y: =135
+            ZIndex: =16
+
+        iconDownCliente_1 As icon.ChevronDown:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =24
+            Icon: =Icon.ChevronDown
+            Width: =24
+            X: =822
+            Y: =145
+            ZIndex: =17
+
+        labelLineaNegocio_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Size: =12
+            Text: ="Línea de Negocio"
+            Width: =140
+            X: =32
+            Y: =203
+            ZIndex: =18
+
+        inputLineaNegocio_1 As text:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            Color: =RGBA(147, 147, 147, 1)
+            Default: ="Seleccione una opción"
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Width: =400
+            X: =32
+            Y: =243
+            ZIndex: =19
+
+        botonListaLineaNegocio_1 As button:
+            Fill: =RGBA(71, 132, 141, 1)
+            Height: =44
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: =""
+            Width: =44
+            X: =388
+            Y: =243
+            ZIndex: =20
+
+        iconDownLineaNegocio_1 As icon.ChevronDown:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =24
+            Icon: =Icon.ChevronDown
+            Width: =24
+            X: =398
+            Y: =253
+            ZIndex: =21
+
+        labelProdTitle_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Size: =12
+            Text: ="Producto"
+            Width: =80
+            X: =456
+            Y: =203
+            ZIndex: =22
+
+        inputPrdocuto_1 As text:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            Color: =RGBA(147, 147, 147, 1)
+            Default: ="Seleccione una opción"
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Width: =400
+            X: =456
+            Y: =243
+            ZIndex: =23
+
+        botonListaProducto_1 As button:
+            Fill: =RGBA(71, 132, 141, 1)
+            Height: =44
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: =""
+            Width: =44
+            X: =812
+            Y: =243
+            ZIndex: =24
+
+        iconDownProducto_1 As icon.ChevronDown:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =24
+            Icon: =Icon.ChevronDown
+            Width: =24
+            X: =822
+            Y: =253
+            ZIndex: =25
+
+        labelTitlMoneda_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Text: ="Moneda"
+            Width: =77
+            X: =32
+            Y: =311
+            ZIndex: =26
+
+        inputMoneda_1 As text:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            Color: =RGBA(147, 147, 147, 1)
+            Default: ="--"
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Width: =188
+            X: =32
+            Y: =351
+            ZIndex: =27
+
+        botonMoneda_1 As button:
+            Fill: =RGBA(71, 132, 141, 1)
+            Height: =44
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: =""
+            Width: =44
+            X: =176
+            Y: =351
+            ZIndex: =28
+
+        iconDownMoneda_1 As icon.ChevronDown:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =24
+            Icon: =Icon.ChevronDown
+            Width: =24
+            X: =186
+            Y: =361
+            ZIndex: =29
+
+        labelTitlPrecio_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Size: =12
+            Text: ="Precio"
+            Width: =60
+            X: =244
+            Y: =311
+            ZIndex: =30
+
+        inputPreccio_1 As text:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            Color: =RGBA(33, 33, 33, 1)
+            Default: ="-"
+            DisabledBorderColor: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisabledFill: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(249, 249, 249, 1)
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Width: =188
+            X: =244
+            Y: =351
+            ZIndex: =31
+
+        labelCantidad_2 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Size: =12
+            Text: ="Cantidad"
+            Width: =77
+            X: =456
+            Y: =311
+            ZIndex: =32
+
+        inputCantidad_1 As text:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            Default: ="1"
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Width: =188
+            X: =456
+            Y: =351
+            ZIndex: =33
+
+        labelTitlTotl_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Size: =12
+            Text: ="Total"
+            Width: =55
+            X: =668
+            Y: =311
+            ZIndex: =34
+
+        inputTotal_1 As text:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            Color: =RGBA(33, 33, 33, 1)
+            Default: ="-"
+            DisabledBorderColor: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisabledFill: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(249, 249, 249, 1)
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =12
+            Width: =188
+            X: =668
+            Y: =351
+            ZIndex: =35
+
+        subContEncabezadoHitos As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(231, 236, 237, 1)
+            Height: =36
+            Width: =824
+            X: =32
+            Y: =489
+            ZIndex: =36
+
+            Label1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Size: =10
+                Text: ="Descripción"
+                Width: =100
+                ZIndex: =1
+
+            Label2 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Size: =10
+                Text: ="Cantidad"
+                Width: =80
+                X: =204
+                ZIndex: =2
+
+            Label3 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Size: =10
+                Text: ="U.Medida"
+                Width: =85
+                X: =298
+                ZIndex: =3
+
+            Label4 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Size: =10
+                Text: ="Valor"
+                Width: =50
+                X: =397
+                ZIndex: =4
+
+            Label5 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Size: =10
+                Text: ="Total"
+                Width: =50
+                X: =454
+                ZIndex: =5
+
+            Label7 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Size: =12
+                Text: ="%"
+                Width: =40
+                X: =524
+                ZIndex: =6
+
+            Label8 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Size: =10
+                Text: ="Condición"
+                Width: =90
+                X: =574
+                ZIndex: =7
+
+            Label9 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Size: =10
+                Text: ="F. Vencimiento"
+                X: =674
+                ZIndex: =8
+
+        Rectangle4 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =2
+            Width: =824
+            X: =32
+            Y: =525
+            ZIndex: =37
+
+        Button1 As button:
+            BorderColor: =RGBA(71, 132, 141, 1)
+            Color: =RGBA(71, 132, 141, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Height: =36
+            Size: =12
+            Text: ="Agregar Hito de Compra"
+            Width: =248
+            X: =320
+            Y: =549
+            ZIndex: =38
+
+        Label10 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =10
+            Text: |-
+                ="Total a Pagar:"
+            Width: =110
+            X: =417
+            Y: =453
+            ZIndex: =39
+
+        Label11 As label:
+            Font: =Font.'Segoe UI'
+            Size: =10
+            Text: ="$ 00.00"
+            Width: =70
+            X: =518
+            Y: =453
+            ZIndex: =40
+
+        Label10_1 As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =10
+            Text: |-
+                ="Monto de Hilos:"
+            Width: =110
+            X: =678
+            Y: =452
+            ZIndex: =41
+
+        Label11_1 As label:
+            Font: =Font.'Segoe UI'
+            Size: =10
+            Text: ="$ 00.00/0%"
+            Width: =80
+            X: =780
+            Y: =453
+            ZIndex: =42
+
+    contOjoOrdenDeCompra As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =false
+        Width: =1366
+        ZIndex: =3
+
+        subContOjoOrdenDeCompra As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =633
+            Width: =888
+            X: =235
+            Y: =60
+            ZIndex: =1
+
+            Label16 As label:
+                Font: =Font.'Segoe UI'
+                Size: =24
+                Text: ="Orden de Compra (OC-0001)"
+                Width: =420
+                X: =32
+                Y: =22
+                ZIndex: =1
+
+            Rectangle5 As rectangle:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                BorderThickness: =2
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =76
+                Width: =888
+                ZIndex: =2
+
+            Label17 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="ID Orden"
+                Width: =85
+                X: =32
+                Y: =100
+                ZIndex: =3
+
+            Label17_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Cliente"
+                Width: =70
+                X: =528
+                Y: =100
+                ZIndex: =4
+
+            Label17_2 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Proveedor"
+                Width: =100
+                X: =176
+                Y: =100
+                ZIndex: =5
+
+            TextInput5 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="OC-0001"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =120
+                X: =32
+                Y: =140
+                ZIndex: =6
+
+            TextInput5_1 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="HERBY S.A.C."
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =328
+                X: =182
+                Y: =140
+                ZIndex: =7
+
+            TextInput5_2 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="TOYOTA"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =328
+                X: =528
+                Y: =140
+                ZIndex: =8
+
+            Label17_3 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Línea de Negocio"
+                Width: =145
+                X: =32
+                Y: =208
+                ZIndex: =9
+
+            Label17_4 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Producto"
+                Width: =80
+                X: =466
+                Y: =208
+                ZIndex: =10
+
+            TextInput5_3 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="CORPORATIVO"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =400
+                X: =32
+                Y: =248
+                ZIndex: =11
+
+            TextInput5_4 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="PE-REQ-Requerimientos"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =400
+                X: =466
+                Y: =248
+                ZIndex: =12
+
+            Label17_5 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Moneda"
+                Width: =85
+                X: =32
+                Y: =316
+                ZIndex: =13
+
+            Label17_6 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Precio"
+                Width: =65
+                X: =244
+                Y: =316
+                ZIndex: =14
+
+            Label17_7 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Cantidad"
+                Width: =85
+                X: =466
+                Y: =316
+                ZIndex: =15
+
+            Label17_8 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Total"
+                Width: =70
+                X: =658
+                Y: =316
+                ZIndex: =16
+
+            TextInput5_5 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="Dólares"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =188
+                X: =32
+                Y: =356
+                ZIndex: =17
+
+            TextInput5_6 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="$ 20.00"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =188
+                X: =244
+                Y: =356
+                ZIndex: =18
+
+            TextInput5_7 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="5"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =188
+                X: =466
+                Y: =356
+                ZIndex: =19
+
+            TextInput5_8 As text:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Default: ="$ 100.00"
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =188
+                X: =658
+                Y: =356
+                ZIndex: =20
+
+            Rectangle6 As rectangle:
+                Fill: =RGBA(212, 212, 212, 1)
+                Height: =1
+                Width: =888
+                Y: =424
+                ZIndex: =21
+
+            Label19 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =16
+                Text: ="Hitos de Compra"
+                Width: =180
+                X: =32
+                Y: =449
+                ZIndex: =22
+
+            Button10 As button:
+                BorderColor: |
+                    =RGBA(0,0,0,0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =30
+                Text: =""
+                Width: =30
+                X: =214
+                Y: =446
+                ZIndex: =23
+
+            Icon7 As icon.ChevronUp:
+                Height: =20
+                Icon: =Icon.ChevronUp
+                Width: =20
+                X: =214
+                Y: =453
+                ZIndex: =24
+
+            subContEncabezadoHitos_1 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(231, 236, 237, 1)
+                Height: =36
+                Width: =824
+                X: =32
+                Y: =489
+                ZIndex: =25
+
+                Label1_1 As label:
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =10
+                    Text: ="Descripción"
+                    Width: =100
+                    ZIndex: =1
+
+                Label2_1 As label:
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =10
+                    Text: ="Cantidad"
+                    Width: =80
+                    X: =187
+                    ZIndex: =2
+
+                Label3_1 As label:
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =10
+                    Text: ="U.Medida"
+                    Width: =85
+                    X: =267
+                    ZIndex: =3
+
+                Label4_1 As label:
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =10
+                    Text: ="Valor"
+                    Width: =50
+                    X: =362
+                    ZIndex: =4
+
+                Label5_1 As label:
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =10
+                    Text: ="Monto"
+                    Width: =56
+                    X: =435
+                    ZIndex: =5
+
+                Label7_1 As label:
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =12
+                    Text: ="%"
+                    Width: =40
+                    X: =512
+                    ZIndex: =6
+
+                Label8_1 As label:
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =10
+                    Text: ="Condición"
+                    Width: =90
+                    X: =568
+                    ZIndex: =7
+
+                Label9_1 As label:
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    Size: =10
+                    Text: ="F. Vencimiento"
+                    X: =658
+                    ZIndex: =8
+
+                Rectangle7 As rectangle:
+                    BorderThickness: =2
+                    Fill: =RGBA(0, 0, 0, 1)
+                    Height: =2
+                    Width: =824
+                    Y: =36
+                    ZIndex: =9
+
+            Rectangle6_1 As rectangle:
+                Fill: =RGBA(212, 212, 212, 1)
+                Height: =1
+                Width: =824
+                X: =32
+                Y: =569
+                ZIndex: =26
+
+            grupoHitosCompra As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =35
+
+                Label20 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="1ra parte del pago"
+                    X: =32
+                    Y: =537
+                    ZIndex: =27
+
+                Label20_1 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="1"
+                    Width: =20
+                    X: =220
+                    Y: =537
+                    ZIndex: =28
+
+                Label20_2 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="Unidad"
+                    Width: =69
+                    X: =300
+                    Y: =537
+                    ZIndex: =29
+
+                Label20_3 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="$50.00"
+                    Width: =60
+                    X: =392
+                    Y: =537
+                    ZIndex: =30
+
+                Label20_4 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="$50.00"
+                    Width: =60
+                    X: =466
+                    Y: =537
+                    ZIndex: =31
+
+                Label20_5 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="50%"
+                    Width: =44
+                    X: =535
+                    Y: =537
+                    ZIndex: =32
+
+                Label20_6 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="30 días"
+                    Width: =69
+                    X: =601
+                    Y: =537
+                    ZIndex: =33
+
+                Label20_7 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="25/07/2023"
+                    X: =689
+                    Y: =537
+                    ZIndex: =34
+
+            Button11 As button:
+                BorderThickness: =0
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(231, 236, 237, 1)
+                Height: =44
+                Size: =12
+                Text: ="Cerrar"
+                Width: =120
+                X: =668
+                Y: =16
+                ZIndex: =43
+
+            grupoHitosCompra2 As group:
+                Height: =5
+                Width: =5
+                X: =8
+                Y: =-497
+                ZIndex: =43
+
+                Label20_15 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="2da parte del pago"
+                    X: =32
+                    Y: =582
+                    ZIndex: =35
+
+                Label20_14 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="1"
+                    Width: =20
+                    X: =220
+                    Y: =582
+                    ZIndex: =36
+
+                Label20_13 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="Unidad"
+                    Width: =69
+                    X: =300
+                    Y: =582
+                    ZIndex: =37
+
+                Label20_12 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="$50.00"
+                    Width: =60
+                    X: =392
+                    Y: =582
+                    ZIndex: =38
+
+                Label20_11 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="$50.00"
+                    Width: =60
+                    X: =466
+                    Y: =582
+                    ZIndex: =39
+
+                Label20_10 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="50%"
+                    Width: =44
+                    X: =535
+                    Y: =582
+                    ZIndex: =40
+
+                Label20_9 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="30 días"
+                    Width: =69
+                    X: =601
+                    Y: =582
+                    ZIndex: =41
+
+                Label20_8 As label:
+                    Font: =Font.'Segoe UI'
+                    Height: =25
+                    Size: =12
+                    Text: ="25/08/2023"
+                    X: =689
+                    Y: =582
+                    ZIndex: =42
+
+            Button12 As button:
+                BorderColor: |
+                    =RGBA(0,0,0,0)
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                Text: =""
+                Width: =44
+                X: =812
+                Y: =16
+                ZIndex: =44
+
+            Image3 As image:
+                Height: =20
+                Image: ='Document Text.svg'
+                Width: =20
+                X: =824
+                Y: =30
+                ZIndex: =45
+
+            Label21 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =16
+                Size: =10
+                Text: |-
+                    ="Total a pagar:"
+                Width: =93
+                X: =504
+                Y: =453
+                ZIndex: =46
+
+            Label21_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =16
+                Size: =10
+                Text: |-
+                    ="Monto de Hitos:"
+                Width: =110
+                X: =680
+                Y: =453
+                ZIndex: =47
+
+            Label22 As label:
+                Font: =Font.'Segoe UI'
+                Height: =16
+                Size: =10
+                Text: ="$ 100.00"
+                Width: =60
+                X: =590
+                Y: =453
+                ZIndex: =48
+
+            Label22_1 As label:
+                Font: =Font.'Segoe UI'
+                Height: =16
+                Size: =10
+                Text: ="$ 100.00/100%"
+                Width: =110
+                X: =782
+                Y: =453
+                ZIndex: =49
+
+    ContainerPrincipal As groupContainer.manualLayoutContainer:
+        Height: =768
+        Width: =1366
+        ZIndex: =4
+
+        containerDatosOrdenesCompra As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(212, 212, 212, 1)
+            BorderThickness: =1
+            Height: =568
+            Width: =1053
+            X: =281
+            Y: =168
+            ZIndex: =22
+
+            galleriaCompras As gallery.galleryVertical:
+                DelayItemLoading: =true
+                Height: =444
+                Items: =CustomGallerySample
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =44
+                Width: =1013
+                X: =20
+                Y: =124
+                ZIndex: =2
+
+                lblIdfila1 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Size: =12
+                    Text: ="OC-0001"
+                    Width: =88
+                    X: =1
+                    Y: =4
+                    ZIndex: =1
+
+                lblProveedorFila1 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =Select(Parent)
+                    Text: ="Herby S.A.C"
+                    Width: =196
+                    X: =100
+                    Y: =4
+                    ZIndex: =2
+
+                lblProductoFila1 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="Sandías"
+                    Width: =97
+                    X: =350
+                    Y: =4
+                    ZIndex: =3
+
+                lblCantidadFila1 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="5.00"
+                    Width: =84
+                    X: =512
+                    Y: =4
+                    ZIndex: =4
+
+                lblPrecioUnitarioFila1 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="$25.00"
+                    Width: =97
+                    X: =622
+                    Y: =4
+                    ZIndex: =5
+
+                lblMontoFila1 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="$125.00"
+                    Width: =96
+                    X: =754
+                    Y: =4
+                    ZIndex: =6
+
+                lblHitoFila1 As label:
+                    Color: =RGBA(99, 99, 99, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="2"
+                    Width: =110
+                    X: =892
+                    Y: =4
+                    ZIndex: =7
+
+            contEncabezadoGalerias As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(231, 236, 237, 1)
+                Height: =36
+                Width: =1013
+                X: =20
+                Y: =88
+                ZIndex: =3
+
+                Rectangle1 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =36
+                    Width: =1013
+                    ZIndex: =1
+
+            barraBusquedaOrdenCompra As text:
+                BorderColor: =RGBA(147, 147, 147, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Buscar orden de compra"
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Size: =12
+                Width: =800
+                X: =20
+                Y: =20
+                ZIndex: =5
+
+            iconBuscarOrden As icon.Search:
+                Height: =30
+                Icon: =Icon.Search
+                Width: =48
+                X: =772
+                Y: =27
+                ZIndex: =6
+
+            labelId_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =12
+                Text: ="ID"
+                Width: =60
+                X: =40
+                Y: =88
+                ZIndex: =7
+
+            labelProveedor_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =12
+                Text: ="Proveedor"
+                X: =127
+                Y: =88
+                ZIndex: =8
+
+            labelProducto_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =12
+                Text: ="Producto"
+                X: =374
+                Y: =88
+                ZIndex: =9
+
+            labelCantidad_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =12
+                Text: ="Cantidad"
+                Width: =81
+                X: =522
+                Y: =88
+                ZIndex: =10
+
+            labelMontoPagar_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =12
+                Text: ="Monto a Pagar"
+                Width: =122
+                X: =764
+                Y: =88
+                ZIndex: =11
+
+            labelHitoCompras_1 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =12
+                Text: ="Hito"
+                Width: =56
+                X: =905
+                Y: =88
+                ZIndex: =13
+
+            rectBuscarOrden_1 As rectangle:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =568
+                Width: =1053
+                ZIndex: =14
+
+            labelPrecioUnitario As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =12
+                Text: ="Precio Unitario"
+                Width: =123
+                X: =626
+                Y: =88
+                ZIndex: =15
+
+        grupoScreenCompras As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =23
+
+            labelTitulo1 As label:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                BorderThickness: =1
+                Color: =RGBA(71, 132, 141, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =72
+                PaddingLeft: =25
+                Size: =20
+                Text: ="App de Compras"
+                Width: =1366
+                ZIndex: =1
+
+            labelFinanzas As label:
+                Align: =Align.Right
+                Color: =RGBA(99, 99, 99, 1)
+                Font: =Font.'Segoe UI'
+                Height: =22
+                LineHeight: =0.8
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: ="Finanzas"
+                Width: =73
+                X: =1236
+                Y: =18
+                ZIndex: =2
+
+            labelNombreUser As label:
+                Align: =Align.Center
+                Font: =Font.'Segoe UI'
+                Height: =25
+                LineHeight: =20
+                Size: =12
+                Text: |
+                    =User().FullName
+                Width: =195
+                X: =1127
+                Y: =40
+                ZIndex: =3
+
+            labelGestion As label:
+                Color: =RGBA(33, 33, 33, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =8
+                Text: ="Gestión"
+                Width: =70
+                X: =32
+                Y: =104
+                ZIndex: =4
+
+            labelMaestros As label:
+                Color: =RGBA(33, 33, 33, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =8
+                Text: ="Maestros"
+                Width: =70
+                X: =32
+                Y: =373
+                ZIndex: =5
+
+            botonOrdenesCompra As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Text: ="Órdenes de compra"
+                Width: =208
+                X: =20
+                Y: =132
+                ZIndex: =6
+
+            botonFacturas As button:
+                Color: =RGBA(99, 99, 99, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                OnSelect: =Navigate(screenFacturas)
+                Size: =12
+                Text: ="Facturas"
+                Width: =208
+                X: =20
+                Y: =188
+                ZIndex: =7
+
+            botonMercadería As button:
+                Color: =RGBA(99, 99, 99, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =44
+                OnSelect: =Navigate(screenMercaderia)
+                Size: =12
+                Text: ="Mercadería"
+                Width: =208
+                X: =20
+                Y: =300
+                ZIndex: =8
+
+            rectangulo1Compras As rectangle:
+                Fill: =RGBA(212, 212, 212, 1)
+                Height: =1
+                Width: =208
+                X: =20
+                Y: =356
+                ZIndex: =9
+
+            botonProveedores As button:
+                Color: =RGBA(99, 99, 99, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                OnSelect: =Navigate(screenProveedores)
+                Size: =12
+                Text: ="Proveedores"
+                Width: =208
+                X: =20
+                Y: =401
+                ZIndex: =10
+
+            botonProductos As button:
+                Color: =RGBA(99, 99, 99, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                OnSelect: =Navigate(screenProductosServicios)
+                Size: =12
+                Text: ="Productos & Servicios"
+                Width: =208
+                X: =20
+                Y: =457
+                ZIndex: =11
+
+            botonNuevaOrden As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                OnSelect: |-
+                    =UpdateContext({varShowPopUp: true})
+                Size: =12
+                Text: ="+ Nueva Orden"
+                Width: =200
+                X: =1134
+                Y: =104
+                ZIndex: =12
+
+            Rectangle3 As rectangle:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Fill: =RGBA(212, 212, 212, 1)
+                Height: =696
+                Width: =1
+                X: =248
+                Y: =72
+                ZIndex: =14
+
+            botonPagos As button:
+                Color: =RGBA(99, 99, 99, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                OnSelect: =Navigate(screenPagos)
+                Size: =12
+                Text: ="Pagos"
+                Width: =208
+                X: =20
+                Y: =244
+                ZIndex: =20
+
+        labelTituloOrdenCompra As label:
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =20
+            Text: ="Órdenes de Compra"
+            Width: =260
+            X: =281
+            Y: =112
+            ZIndex: =24
+
+    contPopUpOrden As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =varShowPopUp
+        Width: =1366
+        ZIndex: =5
+
+        "'Rectangle13-opacado' As rectangle":
+            Fill: =RGBA(0, 0, 0, .25)
+            Height: =764
+            OnSelect: |-
+                =UpdateContext({varShowPopUp:false})
+            Width: =1366
+            ZIndex: =1
+
+        subContPopUp As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =506
+            Visible: =varShowPopUp
+            Width: =888
+            X: =240
+            Y: =92
+            ZIndex: =2
+
+            rectEncabezadoPopUp As rectangle:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =76
+                Width: =888
+                ZIndex: =1
+
+            botonGuardarOrden As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                OnSelect: |-
+                    =UpdateContext({varShowPopUp:false})
+                Size: =12
+                Text: ="Guardar"
+                Width: =120
+                X: =736
+                Y: =16
+                ZIndex: =2
+
+            labelTitlOrdCompra As label:
+                Font: =Font.'Segoe UI'
+                Height: =32
+                Size: =24
+                Text: ="Orden de Compra (OC-0025)"
+                Width: =427
+                X: =32
+                Y: =22
+                ZIndex: =3
+
+            botonCancelarOrden As button:
+                Color: =RGBA(99, 99, 99, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                OnSelect: |-
+                    =UpdateContext({varShowPopUp:false})
+                Size: =12
+                Text: ="Cancelar"
+                Width: =120
+                X: =592
+                Y: =16
+                ZIndex: =4
+
+            rectHitosCompra As rectangle:
+                Fill: =RGBA(212, 212, 212, 1)
+                Height: =1
+                Width: =888
+                Y: =419
+                ZIndex: =5
+
+            labelHitosCompra As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =16
+                Text: ="Hitos de Compra"
+                Width: =194
+                X: =32
+                Y: =444
+                ZIndex: =6
+
+            iconDownHitos As icon.ChevronDown:
+                Height: =24
+                Icon: =Icon.ChevronDown
+                Width: =24
+                X: =209
+                Y: =455
+                ZIndex: =7
+
+            labelIdOrdenPopUp As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="ID Orden"
+                Width: =79
+                X: =32
+                Y: =95
+                ZIndex: =8
+
+            labelProvPopUp As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Proveedor"
+                Width: =90
+                X: =176
+                Y: =95
+                ZIndex: =9
+
+            labelClienteTtl As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Cliente"
+                Width: =70
+                X: =528
+                Y: =95
+                ZIndex: =10
+
+            labelNumOrden As label:
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="OC -0025"
+                Width: =80
+                X: =32
+                Y: =135
+                ZIndex: =11
+
+            inputProveedor As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =328
+                X: =176
+                Y: =135
+                ZIndex: =12
+
+            botonListaProveedor As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: =""
+                Width: =44
+                X: =460
+                Y: =135
+                ZIndex: =13
+
+            iconDownProvPopUp As icon.ChevronDown:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =24
+                Icon: =Icon.ChevronDown
+                Width: =24
+                X: =470
+                Y: =145
+                ZIndex: =14
+
+            inputCliente As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =328
+                X: =528
+                Y: =135
+                ZIndex: =15
+
+            botonListaCliente As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: =""
+                Width: =44
+                X: =812
+                Y: =135
+                ZIndex: =16
+
+            iconDownCliente As icon.ChevronDown:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =24
+                Icon: =Icon.ChevronDown
+                Width: =24
+                X: =822
+                Y: =145
+                ZIndex: =17
+
+            labelLineaNegocio As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Línea de Negocio"
+                Width: =140
+                X: =32
+                Y: =203
+                ZIndex: =18
+
+            inputLineaNegocio As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =400
+                X: =32
+                Y: =243
+                ZIndex: =19
+
+            botonListaLineaNegocio As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: =""
+                Width: =44
+                X: =388
+                Y: =243
+                ZIndex: =20
+
+            iconDownLineaNegocio As icon.ChevronDown:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =24
+                Icon: =Icon.ChevronDown
+                Width: =24
+                X: =398
+                Y: =253
+                ZIndex: =21
+
+            labelProdTitle As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Producto"
+                Width: =80
+                X: =456
+                Y: =203
+                ZIndex: =22
+
+            inputPrdocuto As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="Seleccione una opción"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =400
+                X: =456
+                Y: =243
+                ZIndex: =23
+
+            botonListaProducto As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: =""
+                Width: =44
+                X: =812
+                Y: =243
+                ZIndex: =24
+
+            iconDownProducto As icon.ChevronDown:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =24
+                Icon: =Icon.ChevronDown
+                Width: =24
+                X: =822
+                Y: =253
+                ZIndex: =25
+
+            labelTitlMoneda As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Text: ="Moneda"
+                Width: =77
+                X: =32
+                Y: =311
+                ZIndex: =26
+
+            inputMoneda As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(147, 147, 147, 1)
+                Default: ="--"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =188
+                X: =32
+                Y: =351
+                ZIndex: =27
+
+            botonMoneda As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Height: =44
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: =""
+                Width: =44
+                X: =176
+                Y: =351
+                ZIndex: =28
+
+            iconDownMoneda As icon.ChevronDown:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =24
+                Icon: =Icon.ChevronDown
+                Width: =24
+                X: =186
+                Y: =361
+                ZIndex: =29
+
+            labelTitlPrecio As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Precio"
+                Width: =60
+                X: =244
+                Y: =311
+                ZIndex: =30
+
+            inputPreccio As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(33, 33, 33, 1)
+                Default: ="-"
+                DisabledBorderColor: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =188
+                X: =244
+                Y: =351
+                ZIndex: =31
+
+            labelCantidad As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Cantidad"
+                Width: =77
+                X: =456
+                Y: =311
+                ZIndex: =32
+
+            inputCantidad As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="1"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =188
+                X: =456
+                Y: =351
+                ZIndex: =33
+
+            labelTitlTotl As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =24
+                Size: =12
+                Text: ="Total"
+                Width: =55
+                X: =668
+                Y: =311
+                ZIndex: =34
+
+            inputTotal As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Color: =RGBA(33, 33, 33, 1)
+                Default: ="-"
+                DisabledBorderColor: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(249, 249, 249, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =188
+                X: =668
+                Y: =351
+                ZIndex: =35
+
