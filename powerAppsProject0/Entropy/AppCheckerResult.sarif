@@ -8646,6 +8646,30 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -11236,19 +11260,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subCont_1.barraBusquedaPagos_4.AccessibleLabel"
+                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.barraBusquedaPagos_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subCont_1.barraBusquedaPagos_4.AccessibleLabel",
+                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.barraBusquedaPagos_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "screenMercaderia",
-                "type": "screenMercaderia.contMovimientosMercaderia.subCont_1.barraBusquedaPagos_4"
+                "type": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.barraBusquedaPagos_4"
               }
             }
           ],
@@ -11266,19 +11290,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subCont_1.galeriasPagos_4.AccessibleLabel"
+                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.galeriasPagos_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subCont_1.galeriasPagos_4.AccessibleLabel",
+                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.galeriasPagos_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "screenMercaderia",
-                "type": "screenMercaderia.contMovimientosMercaderia.subCont_1.galeriasPagos_4"
+                "type": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.galeriasPagos_4"
               }
             }
           ],
@@ -11296,19 +11320,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subCont_1.galeriasPagos_4.TabIndex"
+                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.galeriasPagos_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subCont_1.galeriasPagos_4.TabIndex",
+                  "fullyQualifiedName": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.galeriasPagos_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "screenMercaderia",
-                "type": "screenMercaderia.contMovimientosMercaderia.subCont_1.galeriasPagos_4"
+                "type": "screenMercaderia.contMovimientosMercaderia.subContMovimientosMercaderia.galeriasPagos_4"
               }
             }
           ],
