@@ -2329,3 +2329,11 @@ screenCompras As screen:
                 Y: =351
                 ZIndex: =35
 
+            Button20 As button:
+                Fill: =RGBA(0, 0, 0, 0)
+                Text: =""
+                Width: =45
+                X: =200
+                Y: =447
+                ZIndex: =36
+
