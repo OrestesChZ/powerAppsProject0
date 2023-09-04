@@ -523,6 +523,8 @@ screenMercaderia As screen:
 
             Button20 As button:
                 Fill: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(0,0,0,0)
+                HoverFill: =RGBA(0,0,0,0)
                 OnSelect: |-
                     =UpdateContext({varShowMovimientos:true})
                 Text: =""
@@ -1005,6 +1007,9 @@ screenMercaderia As screen:
             Button17 As button:
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
+                HoverBorderColor: =RGBA(0,0,0,0)
+                HoverColor: =RGBA(0,0,0,0)
+                HoverFill: =RGBA(0,0,0,0)
                 OnSelect: |-
                     =UpdateContext({varShowMovimientos:false})
                 Text: =""
