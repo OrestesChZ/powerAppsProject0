@@ -1,147 +1,9 @@
 screenProveedores As screen:
 
-    contPopUpProveed As groupContainer.manualLayoutContainer:
-        Height: =768
-        Width: =1366
-        ZIndex: =1
-
-        subContPopUpProveed As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =578
-            Width: =424
-            X: =472
-            Y: =52
-            ZIndex: =1
-
-            labelAgregarProveedorTitl As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =34
-                Size: =16
-                Text: ="Agregar Proveedor"
-                Width: =200
-                X: =32
-                Y: =24
-                ZIndex: =1
-
-            botonAgregarProvvdor As button:
-                Fill: =RGBA(71, 132, 141, 1)
-                Font: =Font.'Segoe UI'
-                Height: =44
-                Size: =12
-                Text: ="Agregar Proveedor"
-                Width: =360
-                X: =32
-                Y: =504
-                ZIndex: =2
-
-            labelProvvdorTitl As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="Proveedor"
-                Width: =95
-                X: =32
-                Y: =72
-                ZIndex: =3
-
-            lblRUCpROV As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="RUC"
-                Width: =50
-                X: =32
-                Y: =180
-                ZIndex: =4
-
-            labelNumProv As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="Número"
-                Width: =95
-                X: =32
-                Y: =288
-                ZIndex: =5
-
-            lblCorreoProv As label:
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Size: =12
-                Text: ="Correo"
-                Width: =60
-                X: =32
-                Y: =396
-                ZIndex: =6
-
-            TextInput2 As text:
-                BorderColor: =RGBA(212, 212, 212, 1)
-                Default: ="|"
-                Font: =Font.'Segoe UI'
-                Height: =44
-                Size: =12
-                Width: =360
-                X: =32
-                Y: =112
-                ZIndex: =7
-
-            TextInput2_1 As text:
-                BorderColor: =RGBA(212, 212, 212, 1)
-                Default: ="|"
-                Font: =Font.'Segoe UI'
-                Height: =44
-                Size: =12
-                Width: =360
-                X: =32
-                Y: =220
-                ZIndex: =8
-
-            TextInput2_2 As text:
-                BorderColor: =RGBA(212, 212, 212, 1)
-                Default: ="|"
-                Font: =Font.'Segoe UI'
-                Height: =44
-                Size: =12
-                Width: =360
-                X: =32
-                Y: =328
-                ZIndex: =9
-
-            TextInput2_3 As text:
-                BorderColor: =RGBA(212, 212, 212, 1)
-                Default: ="|"
-                Font: =Font.'Segoe UI'
-                Height: =44
-                Size: =12
-                Width: =360
-                X: =32
-                Y: =436
-                ZIndex: =10
-
-            Button7_1 As button:
-                BorderColor: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =30
-                Text: =""
-                Width: =30
-                X: =372
-                Y: =24
-                ZIndex: =11
-
-            Icon4_1 As icon.Cancel:
-                Color: =RGBA(0, 0, 0, 1)
-                Height: =30
-                Icon: =Icon.Cancel
-                Width: =30
-                X: =372
-                Y: =24
-                ZIndex: =12
-
     contOjoProveedores As groupContainer.manualLayoutContainer:
         Height: =768
         Width: =1366
-        ZIndex: =2
+        ZIndex: =1
 
         subContOjoProveedores As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -280,7 +142,7 @@ screenProveedores As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =768
         Width: =1366
-        ZIndex: =3
+        ZIndex: =2
 
         containerDatosFacturas_3 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(212, 212, 212, 1)
@@ -602,7 +464,7 @@ screenProveedores As screen:
                 Font: =Font.'Segoe UI'
                 Height: =44
                 OnSelect: |-
-                    =UpdateContext({varshowPopUp: true})
+                    =UpdateContext({varshowPopUp5: true})
                 Size: =12
                 Text: ="+ Agregar Proveedor"
                 Width: =200
@@ -631,4 +493,154 @@ screenProveedores As screen:
                 X: =20
                 Y: =244
                 ZIndex: =20
+
+    contPopUpProveed As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =varshowPopUp5
+        Width: =1366
+        ZIndex: =3
+
+        "'Rectangle15-opacado' As rectangle":
+            Fill: =RGBA(0,0,0,.25)
+            Height: =768
+            Width: =1366
+            ZIndex: =1
+
+        subContPopUpProveed As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =578
+            Visible: =varshowPopUp5
+            Width: =424
+            X: =472
+            Y: =52
+            ZIndex: =2
+
+            labelAgregarProveedorTitl As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Size: =16
+                Text: ="Agregar Proveedor"
+                Width: =200
+                X: =32
+                Y: =24
+                ZIndex: =1
+
+            botonAgregarProvvdor As button:
+                Fill: =RGBA(71, 132, 141, 1)
+                Font: =Font.'Segoe UI'
+                Height: =44
+                OnSelect: |-
+                    =UpdateContext({varshowPopUp5:false})
+                Size: =12
+                Text: ="Agregar Proveedor"
+                Width: =360
+                X: =32
+                Y: =504
+                ZIndex: =2
+
+            labelProvvdorTitl As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="Proveedor"
+                Width: =95
+                X: =32
+                Y: =72
+                ZIndex: =3
+
+            lblRUCpROV As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="RUC"
+                Width: =50
+                X: =32
+                Y: =180
+                ZIndex: =4
+
+            labelNumProv As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="Número"
+                Width: =95
+                X: =32
+                Y: =288
+                ZIndex: =5
+
+            lblCorreoProv As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Size: =12
+                Text: ="Correo"
+                Width: =60
+                X: =32
+                Y: =396
+                ZIndex: =6
+
+            TextInput2 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =360
+                X: =32
+                Y: =112
+                ZIndex: =7
+
+            TextInput2_1 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =360
+                X: =32
+                Y: =220
+                ZIndex: =8
+
+            TextInput2_2 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =360
+                X: =32
+                Y: =328
+                ZIndex: =9
+
+            TextInput2_3 As text:
+                BorderColor: =RGBA(212, 212, 212, 1)
+                Default: ="|"
+                Font: =Font.'Segoe UI'
+                Height: =44
+                Size: =12
+                Width: =360
+                X: =32
+                Y: =436
+                ZIndex: =10
+
+            Button7_1 As button:
+                BorderColor: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =30
+                Text: =""
+                Width: =30
+                X: =372
+                Y: =24
+                ZIndex: =11
+
+            Icon4_1 As icon.Cancel:
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =30
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({varshowPopUp5:false})
+                Width: =30
+                X: =372
+                Y: =24
+                ZIndex: =12
 
