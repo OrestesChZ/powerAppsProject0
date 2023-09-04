@@ -503,6 +503,8 @@ screenProveedores As screen:
         "'Rectangle15-opacado' As rectangle":
             Fill: =RGBA(0,0,0,.25)
             Height: =768
+            OnSelect: |-
+                =UpdateContext({varshowPopUp5:false})
             Width: =1366
             ZIndex: =1
 
