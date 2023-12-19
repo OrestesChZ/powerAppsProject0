@@ -1,1 +1,50 @@
-{}
+{
+  "68dc2ec3-ecfc-4cd6-aaf3-0fb46ae536d5": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "c682dde3-7f7c-411a-95c0-7f00907cd2a7": {
+          "value": "shared_outlook"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c2007c32-e92d-4b8f-8afd-06656edf88b3"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_outlook": {
+          "value": "c682dde3-7f7c-411a-95c0-7f00907cd2a7"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c2007c32-e92d-4b8f-8afd-06656edf88b3"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SendinganemailPowerapps"
+    ],
+    "dependencies": {
+      "shared_outlook": "c682dde3-7f7c-411a-95c0-7f00907cd2a7"
+    },
+    "dependents": [],
+    "id": "68dc2ec3-ecfc-4cd6-aaf3-0fb46ae536d5"
+  },
+  "c682dde3-7f7c-411a-95c0-7f00907cd2a7": {
+    "connectionRef": {
+      "displayName": "Outlook.com",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3522/outlook/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_outlook"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "68dc2ec3-ecfc-4cd6-aaf3-0fb46ae536d5"
+    ],
+    "id": "c682dde3-7f7c-411a-95c0-7f00907cd2a7"
+  }
+}

@@ -777,6 +777,12 @@ screenProveedores As screen:
                 Fill: =RGBA(54, 176, 75, 1)
                 Font: =Font.'Segoe UI'
                 Height: =42
+                OnSelect: |-
+                    =SendinganemailPowerapps.Run(Text(input_Email) text_1(input_Subject) text);
+                    Notify("Email has been sent");
+                    Reset(input_Email);
+                    Reset(input_Subject);
+                    Reset(input_Body)
                 Text: ="Enviar"
                 Width: =206
                 X: =591
