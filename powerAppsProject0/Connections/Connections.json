@@ -1,36 +1,16 @@
 {
-  "0e91bbb5-8961-41a6-8502-c41354582187": {
-    "connectionRef": {
-      "displayName": "Outlook.com",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3522/outlook/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_outlook"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "f7598362-67d3-4958-96ee-c49aa8395ee6"
-    ],
-    "id": "0e91bbb5-8961-41a6-8502-c41354582187"
-  },
-  "f7598362-67d3-4958-96ee-c49aa8395ee6": {
+  "974b8b1c-a825-437d-96f9-e71ed1c660bc": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "0e91bbb5-8961-41a6-8502-c41354582187": {
-          "value": "shared_outlook-2"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c2007c32-e92d-4b8f-8afd-06656edf88b3"
         }
       },
       "parameterHintsV2": {
-        "shared_outlook-2": {
-          "value": "0e91bbb5-8961-41a6-8502-c41354582187"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c2007c32-e92d-4b8f-8afd-06656edf88b3"
@@ -42,9 +22,23 @@
       "SendinganemailPowerapps"
     ],
     "dependencies": {
-      "shared_outlook-2": "0e91bbb5-8961-41a6-8502-c41354582187"
+      "shared_outlook-2": "c52e67b9-1438-4c94-b027-dc46957e45c7"
     },
     "dependents": [],
-    "id": "f7598362-67d3-4958-96ee-c49aa8395ee6"
+    "id": "974b8b1c-a825-437d-96f9-e71ed1c660bc"
+  },
+  "c52e67b9-1438-4c94-b027-dc46957e45c7": {
+    "connectionRef": {
+      "displayName": "Outlook.com",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1669/1.0.1669.3522/outlook/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_outlook"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "974b8b1c-a825-437d-96f9-e71ed1c660bc"
+    ],
+    "id": "c52e67b9-1438-4c94-b027-dc46957e45c7"
   }
 }

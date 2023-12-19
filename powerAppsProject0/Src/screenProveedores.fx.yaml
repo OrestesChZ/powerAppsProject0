@@ -777,9 +777,11 @@ screenProveedores As screen:
                 Fill: =RGBA(54, 176, 75, 1)
                 Font: =Font.'Segoe UI'
                 Height: =42
-                OnSelect: |-
-                    =SendinganemailPowerapps.Run(input_Subject.Text, input_Body.Text, {input_Email:text});
-                    Notify("Email has been sent");
+                OnSelect: |
+                    =// Asumiendo que 'SendinganemailPowerapps' es el nombre del flujo de Power Automate
+                    
+                    SendinganemailPowerapps.Run(input_Subject.Text, input_Body.Text, { Email: input_Email.Text });
+                    Notify("El correo electrónico ha sido enviado");
                     Reset(input_Email);
                     Reset(input_Subject);
                     Reset(input_Body);
