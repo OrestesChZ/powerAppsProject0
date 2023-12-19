@@ -778,14 +778,11 @@ screenProveedores As screen:
                 Font: =Font.'Segoe UI'
                 Height: =42
                 OnSelect: |-
-                    =If(
-                        !IsBlank(input_Email.Text) && !IsBlank(input_Subject.Text) && !IsBlank(input_Body.Text),
-                        SendinganemailPowerapps.Run(input_Email.Text, input_Subject.Text, input_Body.Text),
-                        Notify("Por favor completa todos los campos antes de enviar el correo.", NotificationType.Error)
-                    );
+                    =SendinganemailPowerapps.Run(input_Subject.Text, input_Body.Text, {input_Email:text});
+                    Notify("Email has been sent");
                     Reset(input_Email);
                     Reset(input_Subject);
-                    Reset(input_Body)
+                    Reset(input_Body);
                 Text: ="Enviar"
                 Width: =206
                 X: =591
