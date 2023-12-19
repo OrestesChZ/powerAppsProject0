@@ -144,7 +144,7 @@ screenProveedores As screen:
         Width: =1366
         ZIndex: =2
 
-        containerDatosFacturas_3 As groupContainer.manualLayoutContainer:
+        containerDatosProveedores As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(212, 212, 212, 1)
             BorderThickness: =1
             Height: =568
@@ -494,6 +494,19 @@ screenProveedores As screen:
                 Y: =244
                 ZIndex: =20
 
+        botonEnviarCorreo As button:
+            Fill: =RGBA(50, 86, 160, 1)
+            Font: =Font.'Segoe UI'
+            Height: =41
+            OnSelect: |-
+                =UpdateContext({varshowPopUpEnviarCorreo: true})
+            Size: =12
+            Text: ="Enviar Correo"
+            Width: =200
+            X: =1134
+            Y: =694
+            ZIndex: =24
+
     contPopUpProveed As groupContainer.manualLayoutContainer:
         Height: =768
         Visible: =varshowPopUp5
@@ -645,4 +658,128 @@ screenProveedores As screen:
                 X: =372
                 Y: =24
                 ZIndex: =12
+
+    containeEnviarCorreo As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =varshowPopUpEnviarCorreo
+        Width: =1366
+        ZIndex: =4
+
+        RectangelCorreoOpacado As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.24)
+            Height: =768
+            OnSelect: |-
+                =UpdateContext({varshowPopUpEnviarCorreo:false})
+            Width: =1366
+            ZIndex: =1
+
+        SubcontainerEnviarCorreo As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =616
+            Visible: |
+                =varshowPopUpEnviarCorreo
+            Width: =877
+            X: =280
+            Y: =104
+            ZIndex: =2
+
+            labelTitlEnviarCorreo As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(0, 121, 187, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =103
+                Size: =30
+                Text: ="Enviar Correo"
+                Width: =877
+                ZIndex: =1
+
+            Label29 As label:
+                Align: =Align.Center
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =121
+                Size: =18
+                Text: |-
+                    ="To:"
+                Width: =316
+                Y: =103
+                ZIndex: =2
+
+            Label29_1 As label:
+                Align: =Align.Center
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =121
+                Size: =18
+                Text: |-
+                    ="Subject:"
+                Width: =316
+                Y: =233
+                ZIndex: =3
+
+            Label29_2 As label:
+                Align: =Align.Center
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =161
+                Size: =18
+                Text: ="Body"
+                Width: =316
+                Y: =363
+                ZIndex: =4
+
+            input_Email As text:
+                Default: =""
+                Height: =121
+                HintText: ="|"
+                Width: =539
+                X: =316
+                Y: =103
+                ZIndex: =5
+
+            input_Subject As text:
+                Default: =""
+                Height: =121
+                HintText: ="|"
+                Width: =539
+                X: =316
+                Y: =233
+                ZIndex: =6
+
+            input_Body As text:
+                Color: =RGBA(149, 149, 149, 1)
+                Default: =""
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Lighter
+                Height: =161
+                HintText: ="/*Escibe aquí lo que quieres enviar*/"
+                Mode: =TextMode.MultiLine
+                Width: =539
+                X: =316
+                Y: =363
+                ZIndex: =7
+
+            botonClear As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 0, 0, 1)
+                Font: =Font.'Segoe UI'
+                Height: =42
+                Text: ="Clear"
+                Width: =206
+                X: =82
+                Y: =550
+                ZIndex: =8
+
+            botonEnviar As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(54, 176, 75, 1)
+                Font: =Font.'Segoe UI'
+                Height: =42
+                Text: ="Enviar"
+                Width: =206
+                X: =591
+                Y: =550
+                ZIndex: =9
 
