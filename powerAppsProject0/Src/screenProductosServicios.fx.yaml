@@ -530,14 +530,14 @@ screenProductosServicios As screen:
             labelTitulo1_5 As label:
                 BorderColor: =RGBA(212, 212, 212, 1)
                 BorderThickness: =1
-                Color: =RGBA(71, 132, 141, 1)
+                Color: =RGBA(246, 88, 16, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =72
                 PaddingLeft: =25
                 Size: =20
-                Text: ="App de Compras"
+                Text: ="Protitipo App"
                 Width: =1366
                 ZIndex: =1
 
@@ -656,7 +656,7 @@ screenProductosServicios As screen:
                 ZIndex: =10
 
             botonProductos_5 As button:
-                Fill: =RGBA(71, 132, 141, 1)
+                Fill: =RGBA(246, 88, 16, 1)
                 Font: =Font.'Segoe UI'
                 Height: =44
                 OnSelect: =Navigate(screenProductosServicios)
@@ -668,7 +668,7 @@ screenProductosServicios As screen:
                 ZIndex: =11
 
             botonAgregarElemento As button:
-                Fill: =RGBA(71, 132, 141, 1)
+                Fill: =RGBA(246, 88, 16, 1)
                 Font: =Font.'Segoe UI'
                 Height: =44
                 OnSelect: |-
