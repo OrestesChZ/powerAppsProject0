@@ -669,7 +669,12 @@ screenProveedores As screen:
             Fill: =RGBA(0, 0, 0, 0.24)
             Height: =768
             OnSelect: |-
-                =UpdateContext({varshowPopUpEnviarCorreo:false})
+                =SendinganemailPowerapps.Run(input_Subject.Text, input_Body.Text, { Email: input_Email.Text });
+                Notify("El correo electrónico ha sido enviado");
+                Reset(input_Email);
+                Reset(input_Subject);
+                Reset(input_Body);
+                UpdateContext({ varshowPopUpEnviarCorreo: false });
             Width: =1366
             ZIndex: =1
 
@@ -778,13 +783,14 @@ screenProveedores As screen:
                 Font: =Font.'Segoe UI'
                 Height: =42
                 OnSelect: |
-                    =// Asumiendo que 'SendinganemailPowerapps' es el nombre del flujo de Power Automate
+                    =
                     
                     SendinganemailPowerapps.Run(input_Subject.Text, input_Body.Text, { Email: input_Email.Text });
                     Notify("El correo electrónico ha sido enviado");
                     Reset(input_Email);
                     Reset(input_Subject);
                     Reset(input_Body);
+                    UpdateContext({ varshowPopUpEnviarCorreo: false });
                 Text: ="Enviar"
                 Width: =206
                 X: =591
